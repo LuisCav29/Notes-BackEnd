@@ -5,8 +5,6 @@ const app = express();
 app.use(express.json(), cors());
 app.use(express.static('dist'));
 
-
-
 const requestLogger = (req, res, next) => {
     console.log('Method:', req.method);
     console.log('Path:', req.path);
@@ -16,8 +14,6 @@ const requestLogger = (req, res, next) => {
 }
 
 app.use(requestLogger);
-
-
 
 let notes = [
     {
