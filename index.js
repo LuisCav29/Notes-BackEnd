@@ -73,7 +73,6 @@ app.post('/api/notes', (req, res) => {
 
 app.put('/api/notes/:id', (req, res) => {
     const body = req.body;
-
     const note = {
         content: body.content,
         important: body.important
